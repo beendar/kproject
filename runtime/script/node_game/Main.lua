@@ -3,6 +3,7 @@ local dbopen = require 'pub.dbopen'
 
 local function startup()
 	clone=1
+	orgin=1
 	-- 节点内共享mongo.game驱动
 	local driver = dbopen.mongo'game'
 	local db = driver:getdb'kgame'
