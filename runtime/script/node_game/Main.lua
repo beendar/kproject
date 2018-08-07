@@ -2,7 +2,6 @@ local lnet = require 'lnet'
 local dbopen = require 'pub.dbopen'
 
 local function startup()
-	remotepush = 1
 	-- 节点内共享mongo.game驱动
 	local driver = dbopen.mongo'game'
 	local db = driver:getdb'kgame'
